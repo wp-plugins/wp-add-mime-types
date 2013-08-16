@@ -9,7 +9,7 @@ The plugin additionally allows the mime types and file extensions to WordPress.
  
 == Description ==
 
-The plugin additionally allows the mime types and file extensions to WordPress. In other words, your WordPress site can upload various file extensions.
+The plugin additionally allows the mime types and file extensions to WordPress. In other words, your WordPress site can upload various file extensions. The support language is English and Japanese.
 
 
 == Installation ==
@@ -30,7 +30,6 @@ You can see the list of allowed mime types and file extensions by WordPress.
 
  The user who have the [manage_options](http://codex.wordpress.org/Roles_and_Capabilities#manage_options) permission can only add the setting.
 
-
 == Frequently Asked Questions ==
 
 
@@ -41,6 +40,7 @@ You can see the list of allowed mime types and file extensions by WordPress.
 
 = 1.0.0 =
 * First Released.
+* Language: English, Japanese
 
 == Upgrade Notice ==
 

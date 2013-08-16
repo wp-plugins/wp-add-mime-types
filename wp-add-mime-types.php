@@ -3,7 +3,7 @@
 Plugin Name: WP Add Mime Types 
 Plugin URI: 
 Description: The plugin additionally allows the mime types and file extensions to WordPress.
-Version: 1.0.0
+Version: 1.0.1
 Author: Kimiya Kitani
 Author URI: http://kitaney.jp/~kitani
 */
@@ -12,7 +12,7 @@ Author URI: http://kitaney.jp/~kitani
 load_plugin_textdomain('wp-add-mime-types', '/'.str_replace(ABSPATH, '', dirname(__FILE__)) . 'lang/');
 
 $default_var = array(
-	'wp_add_mime_types'	=>	'1.0.0',
+	'wp_add_mime_types'	=>	'1.0.1',
 );
 
 // Add Setting to WordPress 'Settings' menu. 
@@ -45,6 +45,7 @@ function admin_settings_page(){
 		$settings['mime_type_values'] = serialize($mime_type_values);
     }else
       $mime_type_values = unserialize($settings['mime_type_values']);
+      
       
 	// Update to WordPress Data.
 	update_option('wp_add_mime_types_array', $settings);
@@ -97,7 +98,7 @@ foreach($allowed_mime_values as $type=>$value){
 		<p><?php  _e('* About the mime type value for the file extension, please search "mime type [file extension name] using a search engine.<br/> Ex. "epub = application/epub+zip in http://ja.wikipedia.org/wiki/EPUB."','wp-add-mime-types'); ?></p>
 
 	<?php // If the permission is not allowed, the user can only read the setting. ?>
-		<textarea name="mime_type_values" cols="100" rows="10" <?php if(!$permission) echo "disabled"; ?>><?php foreach ($mimes as $m_type=>$m_value) echo $m_type . "\t= " .$m_value . "\n"; ?></textarea>
+		<textarea name="mime_type_values" cols="100" rows="10" <?php if(!$permission) echo "disabled"; ?>><?php if(isset($mimes) && is_array($mimes)) foreach ($mimes as $m_type=>$m_value) echo $m_type . "\t= " .$m_value . "\n"; ?></textarea>
      </fieldset>
 
      <br/>

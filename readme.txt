@@ -1,4 +1,4 @@
-=== Add Mime Types ===
+=== WP Add Mime Types ===
 Contributors: Kimiya Kitani
 Tags: mime,file extention
 Requires at least: 3.0

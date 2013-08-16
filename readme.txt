@@ -35,7 +35,7 @@ You can see the list of allowed mime types and file extensions by WordPress.
 
 
 == Screenshots ==
-`/assets/screenshot-1.png`
+1. Setting Menu
 
 == Changelog ==
 

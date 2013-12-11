@@ -2,8 +2,8 @@
 Contributors: Kimiya Kitani
 Tags: mime,file extention
 Requires at least: 3.0
-Tested up to: 3.5.2
-Stable tag: 1.0.1
+Tested up to: 3.7.1
+Stable tag: 1.1.0
 
 The plugin additionally allows the mime types and file extensions to WordPress.
  
@@ -37,6 +37,9 @@ You can see the list of allowed mime types and file extensions by WordPress.
 1. Setting Menu
 
 == Changelog ==
+
+= 1.1.0 =
+* Tested up to WordPress 3.7.1
 
 = 1.0.1 =
 * Fixed the display error if the setting value is empty for the first time. 

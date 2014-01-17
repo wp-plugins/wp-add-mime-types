@@ -3,7 +3,7 @@ Contributors: Kimiya Kitani
 Tags: mime,file extention
 Requires at least: 3.0
 Tested up to: 3.8
-Stable tag: 1.2.0
+Stable tag: 1.2.1
 
 The plugin additionally allows the mime types and file extensions to WordPress.
  
@@ -38,6 +38,8 @@ You can see the list of allowed mime types and file extensions by WordPress.
 
 == Changelog ==
 
+= 1.2.1 =
+* Fixed Language support
 = 1.2.0 =
 * Tested up to WordPress 3.8
 
